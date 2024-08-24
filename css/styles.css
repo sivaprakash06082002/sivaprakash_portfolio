@@ -1,0 +1,586 @@
+/* General body styling */
+
+.navbar {
+    margin-bottom: 30px;
+}
+
+
+
+
+
+/* Define rotation animation keyframes */
+@keyframes rotateIn {
+    from {
+        opacity: 0;
+        transform: rotate(-30deg) translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: rotate(0deg) translateX(0);
+    }
+}
+
+/* Define movement animation keyframes */
+@keyframes moveIn {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Animation class for rotation */
+.rotate-on-scroll {
+    opacity: 0;
+    animation: rotateIn 0.6s ease-out forwards;
+}
+
+/* Animation class for movement */
+.move-on-scroll {
+    opacity: 0;
+    animation: moveIn 0.6s ease-out forwards;
+}
+
+
+
+
+
+
+
+
+
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    justify-content: end;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #343a40;
+    color: #fff;
+}
+
+/* About Me Section Styling */
+#about-me {
+    background: linear-gradient(135deg, #8ce4a2, #02ff28);
+    border-radius: 10px;
+    padding: 40px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+#about-me h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #1206f9; /* Bootstrap primary color */
+}
+
+#about-me p {
+    font-size: 1.3rem;
+    line-height: 1.6;
+    color: #ffffff;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Additional Section Styling */
+section {
+    margin-bottom: 40px;
+}
+
+.container {
+    padding: 0 15px;
+}
+
+@media (min-width: 768px) {
+    .container {
+        padding: 0 30px;
+    }
+}
+
+/* Education Section Styling */
+#education {
+    background: linear-gradient(135deg, #8ce4a2, #02ff28);
+    padding: 40px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading Styling */
+#education h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #1206f9; /* Bootstrap primary color */
+    margin-bottom: 20px;
+}
+
+/* Card Styling */
+.card {
+    background-color: #ffffff; /* White background */
+    color: #333333; /* Dark text color for better contrast */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Slightly stronger shadow for depth */
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-body {
+    text-align: center;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.card-subtitle {
+    font-size: 1.2rem;
+    color: #e0e0e0; /* Lighter shade for subtitle */
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #333333; /* Darker text color for better contrast */
+}
+
+
+
+
+
+
+
+
+
+/* Skills Section Styling */
+#skills {
+    background: linear-gradient(135deg, #8ce4a2, #02ff28);
+    padding: 40px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#skills h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #1206f9; /* Bootstrap primary color */
+    margin-bottom: 20px;
+}
+
+.skill-card {
+    background-color: #ffffff; /* White background */
+    color: #333333; /* Dark text color for better contrast */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Slightly stronger shadow for depth */
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+/* Hover effect for interactivity */
+.skill-card:hover {
+    transform: translateY(-10px); /* Slight lift on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Increase shadow on hover */
+}
+
+.skill-card:hover {
+    transform: scale(1.05);
+}
+
+.skill-card i {
+    color: #fd0000; /* Icon color */
+}
+
+.skill-card h5 {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+
+ /* Courses Section Styling */
+ #courses {
+    background: linear-gradient(135deg, #8ce4a2, #02ff28);
+    padding: 40px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+#courses h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #1206f9; /* Bootstrap primary color */
+    margin-bottom: 20px;
+    text-align: center; /* Center the header text */
+}
+
+.card {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+    margin: auto; /* Center the card horizontally */
+    margin: 0 auto; /* Added */
+    align-items: center;
+
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-body {
+    text-align: center;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #000;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #555;
+    align-items: center;
+}
+
+#certificate-image {
+    display: none;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#certificate-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Centering the card container */
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+/* General container styling */
+
+#projects {
+    
+    max-width: 1150px;
+    background: linear-gradient(135deg, #8ce4a2, #02ff28);
+    padding: 40px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#projects h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #1206f9; /* Bootstrap primary color */
+}
+
+/* Card styles */
+.card {
+    background-color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-body {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Card Title */
+.card-title {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #007bff;
+}
+
+/* Card Text */
+.card-text {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Card hover effect */
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive layout */
+@media (max-width: 767px) {
+    #projects h2 {
+        font-size: 2rem;
+    }
+
+    .card-title {
+        font-size: 1.25rem;
+    }
+
+    .card-text {
+        font-size: 0.95rem;
+    }
+}
+
+
+
+
+
+/* Contact form container styles */
+/* General Container Styles */
+#contact {
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 20px;
+    background: linear-gradient(135deg, #8ce4a2, #02ff28);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#contact h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #1206f9; /* Bootstrap primary color */
+}
+
+/* Form Group Styles */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-weight: 600;
+    color: #555;
+}
+
+/* Input Fields */
+.form-control {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+/* Focus Effects */
+.form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+
+/* Text Area */
+.form-control#message {
+    resize: vertical;
+}
+
+/* Submit Button */
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    width: 100%;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    box-shadow: 0 4px 10px rgba(0, 123, 255, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 767px) {
+    #contact {
+        padding: 15px;
+    }
+
+    .btn-primary {
+        font-size: 1rem;
+        padding: 10px 15px;
+    }
+}
+
+
+
+
+/* Navbar Styles */
+.navbar {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #343a40; /* Dark gray background */
+    transition: background-color 0.3s ease;
+}
+
+.navbar:hover {
+    background-color: #212529; /* Darker on hover */
+}
+
+.navbar-brand {
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* Section Heading */
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+h2::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 4px;
+    background-color: #007bff;
+    margin: 10px auto;
+    border-radius: 2px;
+}
+
+/* Card Styles */
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.card-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.card-text {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Skill Card Effects */
+.skill-card {
+    background: white;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+}
+
+.skill-card:hover {
+    background: #f0f0f0;
+    transform: scale(1.05);
+}
+
+.skill-card i {
+    color: #007bff;
+    transition: color 0.3s;
+}
+
+.skill-card:hover i {
+    color: #0056b3;
+}
+
+/* Footer */
+footer {
+    background-color: #343a40;
+    padding: 20px;
+    font-size: 1rem;
+}
+
+footer p {
+    margin: 0;
+    color: #fff;
+}
+
+/* Contact Form Styles */
+form {
+    background: linear-gradient(135deg, #8ce4a2, #02ff28);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+}
+
+form:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+form .btn-primary {
+    background-color: #007bff;
+    border: none;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+form .btn-primary:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 2rem;
+    }
+
+    .card {
+        margin-bottom: 30px;
+    }
+}
+
